@@ -63,12 +63,6 @@ plugin "tabmerge" do
   sh "curl 'http://www.vim.org/scripts/download_script.php?src_id=8828' > plugin/Tabmerge.vim"
 end
 
-# easy tab zooming
-plugin "zoomwin" do
-  mkdir_p "plugin"
-  sh "curl 'http://www.vim.org/scripts/download_script.php?src_id=508' > plugin/Zoomwin.vim"
-end
-
 ### LANGUAGE AND SYNTAX
 
 # ruby language support
