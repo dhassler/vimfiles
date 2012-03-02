@@ -17,6 +17,9 @@ plugin "ack", "https://github.com/mileszs/ack.vim.git"
 # ctags file management
 plugin "autotag", "https://github.com/vim-scripts/AutoTag.git"
 
+# Show tags
+plugin "tagbar", "https://github.com/majutsushi/tagbar.git"
+
 
 ### EDITING AND MOVING
 

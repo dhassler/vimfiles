@@ -1,5 +1,5 @@
 if has("gui")
   colorscheme Tomorrow-Night
 else
-  colorscheme solarized
+  "colorscheme solarized
 endif

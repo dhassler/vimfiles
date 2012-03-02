@@ -83,7 +83,11 @@ endif
 map <Leader>f :CommandT<CR>
 
 """ tagbar
-" map <silent> <Leader>tb :TagbarOpen<CR>
+map <silent> <Leader>tb :TagbarOpen<CR>
+map <Leader>t :TagbarToggle<CR>
+if has("gui_macvim")
+  map <D-e> :TagbarToggle<CR><C-w>l
+endif
 
 """ gist
 " post gists privately by default

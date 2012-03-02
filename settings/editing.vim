@@ -11,6 +11,8 @@ map <C-k> <C-w>k
 map <C-h> <C-w>h
 map <C-l> <C-w>l
 
+map :vs :vsplit<cr><c-w>l
+
 " fast zoom for a split
 map <C-_> <C-w>_
 
@@ -36,8 +38,8 @@ vnoremap <C-f> "hy:/\V<C-r>=escape(@h,'/')<CR>/<CR>
 
 if has("gui_macvim")
   " cmd-l for clearing search highlights
-  nnoremap <D-l> :nohlsearch<CR>
-  inoremap <D-l> <C-O>:nohlsearch<CR>
+  nnoremap <D-l> :nohlsearch<CR>:ccl<CR>
+  inoremap <D-l> <C-O>:nohlsearch<CR>:ccl<CR>
 endif
 
 " easy tabs
