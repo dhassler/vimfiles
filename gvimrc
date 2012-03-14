@@ -12,7 +12,7 @@ if has("gui_macvim")
   set columns=156
   set lines=47
   " set transparency=5
-  set guifont=Anonymous\ Pro:h18
+  set guifont=Inconsolata-dz:h16
 
   " c - use console dialogs instead of graphical windows
   " g - set inactive menu items grey
