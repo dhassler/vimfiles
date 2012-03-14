@@ -16,6 +16,14 @@ map :vs :vsplit<cr><c-w>l
 " fast zoom for a split
 map <C-_> <C-w>_
 
+" use ,F to jump to tag in a vertical split
+nnoremap <silent> ,F :let word=expand("<cword>")<CR>:vsp<CR>:wincmd w<cr>:exec("tag ". word)<cr>
+
+" use ,gf to go to file in a vertical split
+nnoremap <silent> ,gf :vertical botright wincmd f<CR>
+
+
+
 " get the last pasted text (via evilchelu)
 nnoremap gb '[V']
 
