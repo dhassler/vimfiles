@@ -44,10 +44,12 @@ vnoremap <C-r> "hy:%s/\V<C-r>=escape(@h,'/')<CR>//gc<left><left><left>
 " this is useful for more complex strings than #/* can search
 vnoremap <C-f> "hy:/\V<C-r>=escape(@h,'/')<CR>/<CR>
 
-if has("gui_macvim")
+if has("gui_running")
   " cmd-l for clearing search highlights
   nnoremap <D-l> :nohlsearch<CR>:ccl<CR>
   inoremap <D-l> <C-O>:nohlsearch<CR>:ccl<CR>
+else
+  nnoremap <CR> :nohlsearch<CR>
 endif
 
 " easy tabs
@@ -145,6 +147,9 @@ else
   imap <C-8> <Esc>8gt
   map  <C-9> 9gt
   imap <C-9> <Esc>9gt
+
+  map <C-p> gt
+  map <C-n> gT
 endif
 
 " tab movement setup, via ara howard
@@ -169,4 +174,6 @@ endfunction
 
 map <C-Left> :call TabMove(1)<CR>
 map <C-Right> :call TabMove(0)<CR>
+" map <C-p> :call TabMove(1)<CR>
+" map <C-n> :call TabMove(0)<CR>
 

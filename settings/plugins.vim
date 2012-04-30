@@ -16,6 +16,8 @@ if has("gui_macvim")
   " but: open the nerd tree window first, in CWD, so the find doesn't change
   " the tree root.
   nnoremap <D-R> :NERDTree<CR><C-w>p:NERDTreeFind<CR>
+else
+  map <leader>w :NERDTreeToggle<CR><space>
 endif
 
 
@@ -28,6 +30,8 @@ let g:NERDRemoveExtraSpaces = 1
 if has("gui_macvim")
   map <D-/> <plug>NERDCommenterToggle
   imap <D-/> <Esc><plug>NERDCommenterToggle i
+else
+  map <C-/> <plug>NERDCommenterToggle
 endif
 
 
