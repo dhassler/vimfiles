@@ -4,9 +4,10 @@ load "plugins.rake"
 ### CORE
 
 # fast file navigation
-plugin "command-t", "https://github.com/wincent/Command-T.git" do
-  sh "cd ruby/command-t && ruby extconf.rb && make clean && make"
-end
+plugin "ctrlp", "https://github.com/kien/ctrlp.vim.git"
+#plugin "command-t", "https://github.com/wincent/Command-T.git" do
+  #sh "cd ruby/command-t && ruby extconf.rb && make clean && make"
+#end
 
 # project tree navigation
 plugin "nerdtree", "https://github.com/scrooloose/nerdtree.git"
@@ -107,9 +108,9 @@ plugin "copy-as-rtf", "git://github.com/aniero/vim-copy-as-rtf.git"
 plugin "gist-vim", "https://github.com/mattn/gist-vim.git"
 
 # snippets
-plugin "snipmate", "https://github.com/garbas/vim-snipmate.git"
-plugin "snipmate-snippets", "https://github.com/honza/snipmate-snippets.git"
+# plugin "snipmate", "https://github.com/garbas/vim-snipmate.git"
+# plugin "snipmate-snippets", "https://github.com/honza/snipmate-snippets.git"
 
 # snipmate dependencies
-plugin "tlib", "https://github.com/tomtom/tlib_vim.git"
-plugin "addon-mw-utils", "https://github.com/MarcWeber/vim-addon-mw-utils.git"
+# plugin "tlib", "https://github.com/tomtom/tlib_vim.git"
+# plugin "addon-mw-utils", "https://github.com/MarcWeber/vim-addon-mw-utils.git"

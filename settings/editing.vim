@@ -22,12 +22,10 @@ nnoremap <silent> ,F :let word=expand("<cword>")<CR>:vsp<CR>:wincmd w<cr>:exec("
 " use ,gf to go to file in a vertical split
 nnoremap <silent> ,gf :vertical botright wincmd f<CR>
 
-
-
 " get the last pasted text (via evilchelu)
 nnoremap gb '[V']
 
-if !has("gui")
+if !has("gui_running")
   " set custom cursor -- vertical bar in insert mode (iTerm2)
   " from http://www.iterm2.com/#/section/documentation/escape_codes
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
@@ -67,7 +65,7 @@ map <leader>x :x<CR>
 map <leader>qa :qa<CR>
 
 " indent and tab switching
-if has("gui_macvim")
+if has("gui_running")
   " map fullscreen toggle to be same as iterm2
   map <D-CR> :set fullscreen!<CR>
 

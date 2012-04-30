@@ -9,7 +9,7 @@ command -n=? -complete=dir NT NERDTreeToggle <args>
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '^tags$']
 let NERDTreeDirArrows=1
 
-if has("gui_macvim")
+if has("gui_running")
   nnoremap <D-r> :NERDTreeToggle<CR>
   " 'reveal in project' a la textmate:
   " nnoremap <D-R> :NERDTreeFind<CR>
@@ -27,11 +27,11 @@ endif
 let g:NERDSpaceDelims = 1
 let g:NERDRemoveExtraSpaces = 1
 
-if has("gui_macvim")
+if has("gui_running")
   map <D-/> <plug>NERDCommenterToggle
   imap <D-/> <Esc><plug>NERDCommenterToggle i
 else
-  map <C-/> <plug>NERDCommenterToggle
+  map <C-_> <Esc><leader>c<space>
 endif
 
 
@@ -67,29 +67,16 @@ let g:surround_61 = "<%= \r %>" " =
 
 
 """ vimclojure
-
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
 let vimclojure#WantNailgun=1
 let vimclojure#SplitPos="bottom"
 let vimclojure#SplitSize=10
 
-
-""" Command-T
-" put commandT window at the top of the screen
-let g:CommandTMatchWindowAtTop=1
-
-if has("gui_macvim")
-  map <D-t> :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
-endif
-
-map <Leader>f :CommandT<CR>
-
 """ tagbar
 map <silent> <Leader>tb :TagbarOpen<CR>
 map <Leader>t :TagbarToggle<CR>
-if has("gui_macvim")
+if has("gui_running")
   map <D-e> :TagbarToggle<CR><C-w>l
 endif
 
