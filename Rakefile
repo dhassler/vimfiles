@@ -34,6 +34,9 @@ plugin "nerdcommenter", "https://github.com/scrooloose/nerdcommenter.git"
 # pairs of surroundings
 plugin "surround", "https://github.com/tpope/vim-surround.git"
 
+# Work with words
+plugin "abolish", "https://github.com/tpope/vim-abolish.git"
+
 # automatically add "end" to ruby, vimscript, and more
 plugin "endwise", "https://github.com/tpope/vim-endwise.git"
 
