@@ -53,6 +53,9 @@ endif
 " easy tabs
 map <leader>tn :tabnew<CR>
 
+" hide quickfix window
+nnoremap q :ccl<CR>
+
 " easy escape
 imap jj <Esc>
 imap jk <Esc>

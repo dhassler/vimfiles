@@ -69,7 +69,7 @@ let g:surround_61 = "<%= \r %>" " =
 """ vimclojure
 let vimclojure#HighlightBuiltins=1
 let vimclojure#ParenRainbow=1
-let vimclojure#WantNailgun=1
+" let vimclojure#WantNailgun=1
 let vimclojure#SplitPos="bottom"
 let vimclojure#SplitSize=10
 
