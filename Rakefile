@@ -26,7 +26,7 @@ plugin "tagbar", "https://github.com/majutsushi/tagbar.git"
 
 # color schemes
 plugin "solarized", "https://github.com/altercation/vim-colors-solarized.git"
-plugin "tomorrow-night", "https://github.com/chriskempson/vim-tomorrow-theme.git"
+plugin("tomorrow-theme", "https://github.com/chriskempson/tomorrow-theme.git") { ln_s('vim/colors', '.') }
 
 # code commenting
 plugin "nerdcommenter", "https://github.com/scrooloose/nerdcommenter.git"
@@ -105,10 +105,10 @@ plugin "vimclojure", "https://github.com/vim-scripts/VimClojure.git"
 plugin "fugitive", "https://github.com/tpope/vim-fugitive.git"
 
 # for using syntax-highlighted text in presentations
-plugin "copy-as-rtf", "git://github.com/aniero/vim-copy-as-rtf.git"
+# plugin "copy-as-rtf", "git://github.com/aniero/vim-copy-as-rtf.git"
 
 # gist integration
-plugin "gist-vim", "https://github.com/mattn/gist-vim.git"
+# plugin "gist-vim", "https://github.com/mattn/gist-vim.git"
 
 # snippets
 # plugin "snipmate", "https://github.com/garbas/vim-snipmate.git"

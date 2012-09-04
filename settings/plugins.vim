@@ -76,7 +76,7 @@ imap <buffer> <silent> <C-,> <Plug>ClojureReplUpHistory
 imap <buffer> <silent> <C-.> <Plug>ClojureReplDownHistory
 
 """ autocmd FileType * if &ft == "clojure" && exists("b:vimclojure_repl") | call SetupMyVCRepl() | endif
-autocmd FileType * if &ft == "clojure" | call SetupMyVCRepl() | endif
+""" autocmd FileType * if &ft == "clojure" | call SetupMyVCRepl() | endif
 
 """ tagbar
 map <silent> <Leader>tb :TagbarOpen<CR>
