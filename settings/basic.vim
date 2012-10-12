@@ -100,3 +100,5 @@ set wildmenu " command-line completion shows matches
 """ multi-byte characters
 
 set encoding=utf-8 " set default encoding (default in macvim)
+
+set nofoldenable " disable folding

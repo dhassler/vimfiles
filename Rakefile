@@ -26,7 +26,7 @@ plugin "tagbar", "https://github.com/majutsushi/tagbar.git"
 
 # color schemes
 plugin "solarized", "https://github.com/altercation/vim-colors-solarized.git"
-plugin("tomorrow-theme", "https://github.com/chriskempson/tomorrow-theme.git") { ln_s('vim/colors', '.') }
+plugin("tomorrow-theme", "https://github.com/chriskempson/tomorrow-theme.git")
 
 # code commenting
 plugin "nerdcommenter", "https://github.com/scrooloose/nerdcommenter.git"
