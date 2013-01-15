@@ -97,6 +97,7 @@ plugin "scss", "https://github.com/cakebaker/scss-syntax.vim.git"
 plugin "textile", "https://github.com/timcharper/textile.vim.git"
 plugin "vim-coffee-script", "https://github.com/kchmck/vim-coffee-script.git"
 plugin "vimclojure", "https://github.com/vim-scripts/VimClojure.git"
+plugin "vim-foreplay", "https://github.com/tpope/vim-foreplay.git"
 
 
 ### MISC
