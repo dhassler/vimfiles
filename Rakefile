@@ -3,6 +3,9 @@ load "plugins.rake"
 
 ### CORE
 
+# Sensible defaults
+plugin "vim-sensible", "https://github.com/tpope/vim-sensible.git"
+
 # fast file navigation
 plugin "ctrlp", "https://github.com/kien/ctrlp.vim.git"
 #plugin "command-t", "https://github.com/wincent/Command-T.git" do
@@ -25,8 +28,7 @@ plugin "tagbar", "https://github.com/majutsushi/tagbar.git"
 ### EDITING AND MOVING
 
 # color schemes
-plugin "solarized", "https://github.com/altercation/vim-colors-solarized.git"
-plugin("tomorrow-theme", "https://github.com/chriskempson/tomorrow-theme.git")
+plugin "tomorrow-theme", "https://github.com/chriskempson/tomorrow-theme.git"
 
 # code commenting
 plugin "nerdcommenter", "https://github.com/scrooloose/nerdcommenter.git"
@@ -76,7 +78,6 @@ plugin "vim-ruby", "https://github.com/vim-ruby/vim-ruby.git"
 plugin "vim-ragtag", "https://github.com/tpope/vim-ragtag.git"
 
 plugin "csv", "https://github.com/vim-scripts/csv.vim.git"
-plugin "cucumber", "https://github.com/tpope/vim-cucumber.git"
 plugin "git", "https://github.com/tpope/vim-git.git"
 plugin "haml", "https://github.com/tpope/vim-haml.git"
 plugin "handlebars", "https://github.com/nono/vim-handlebars.git"
@@ -84,37 +85,21 @@ plugin "html5", "git://github.com/othree/html5.vim.git"
 plugin "html5-syntax", "git://github.com/othree/html5-syntax.vim.git"
 plugin "jasmine", "https://github.com/claco/jasmine.vim.git"
 plugin "javascript", "https://github.com/pangloss/vim-javascript.git"
-plugin "jshint", "https://github.com/wookiehangover/jshint.vim.git"
 plugin "liquid", "https://github.com/tpope/vim-liquid.git"
 plugin "markdown", "https://github.com/tpope/vim-markdown.git"
-plugin "nodejs", "https://github.com/mmalecki/vim-node.js.git"
-plugin "puppet", "https://github.com/ajf/puppet-vim.git"
 plugin "rails", "https://github.com/tpope/vim-rails.git"
 plugin "rspec", "https://github.com/taq/vim-rspec.git"
-#plugin "scala", "https://github.com/bdd/vim-scala.git"
 plugin "scss", "https://github.com/cakebaker/scss-syntax.vim.git"
-#plugin "sinatra", "https://github.com/hallison/vim-ruby-sinatra.git"
 plugin "textile", "https://github.com/timcharper/textile.vim.git"
 plugin "vim-coffee-script", "https://github.com/kchmck/vim-coffee-script.git"
+
+# Clojure
 plugin "vimclojure", "https://github.com/vim-scripts/VimClojure.git"
 plugin "vim-foreplay", "https://github.com/tpope/vim-foreplay.git"
-
+plugin "vim-classpath", "https://github.com/tpope/vim-classpath.git"
+plugin "vim-clojure-static", "https://github.com/guns/vim-clojure-static.git"
 
 ### MISC
 
 # git support
 plugin "fugitive", "https://github.com/tpope/vim-fugitive.git"
-
-# for using syntax-highlighted text in presentations
-# plugin "copy-as-rtf", "git://github.com/aniero/vim-copy-as-rtf.git"
-
-# gist integration
-# plugin "gist-vim", "https://github.com/mattn/gist-vim.git"
-
-# snippets
-# plugin "snipmate", "https://github.com/garbas/vim-snipmate.git"
-# plugin "snipmate-snippets", "https://github.com/honza/snipmate-snippets.git"
-
-# snipmate dependencies
-# plugin "tlib", "https://github.com/tomtom/tlib_vim.git"
-# plugin "addon-mw-utils", "https://github.com/MarcWeber/vim-addon-mw-utils.git"
