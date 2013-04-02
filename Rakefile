@@ -39,6 +39,9 @@ plugin "surround", "https://github.com/tpope/vim-surround.git"
 # Work with words
 plugin "abolish", "https://github.com/tpope/vim-abolish.git"
 
+# Dispatch all the things
+plugin "dispatch", "https://github.com/tpope/vim-dispatch.git"
+
 # automatically add "end" to ruby, vimscript, and more
 plugin "endwise", "https://github.com/tpope/vim-endwise.git"
 
