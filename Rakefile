@@ -98,7 +98,7 @@ plugin "vim-coffee-script", "https://github.com/kchmck/vim-coffee-script.git"
 
 # Clojure
 plugin "vimclojure", "https://github.com/vim-scripts/VimClojure.git"
-plugin "vim-foreplay", "https://github.com/tpope/vim-foreplay.git"
+plugin "vim-fireplace", "https://github.com/tpope/vim-fireplace.git"
 plugin "vim-classpath", "https://github.com/tpope/vim-classpath.git"
 plugin "vim-clojure-static", "https://github.com/guns/vim-clojure-static.git"
 
