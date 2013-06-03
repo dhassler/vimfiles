@@ -20,3 +20,7 @@ function Refresh()
 endfunction
 
 map <silent> <Leader>r :call Refresh()<CR>
+
+""" Clojure nREPL bindings
+nnoremap <C-e> :Eval<CR>
+nnoremap E :%Eval<CR>

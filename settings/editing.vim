@@ -50,6 +50,10 @@ else
   nnoremap <CR> :nohlsearch<CR>
 endif
 
+" No search clearing in cmdline-window
+:au CmdwinEnter @ nnoremap <CR> <CR>
+:au CmdwinLeave @ nnoremap <CR> :nohlsearch<CR>
+
 " easy tabs
 map <leader>tn :tabnew<CR>
 
