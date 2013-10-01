@@ -73,7 +73,8 @@ plugin "tabmerge" do
 end
 
 # make ruby blocks a noun (r)
-plugin "vim-textobj-rubyblock", "https://github.com/edsono/vim-matchit.git"
+plugin "vim-textobj-user", "https://github.com/kana/vim-textobj-user.git"
+plugin "vim-textobj-rubyblock", "https://github.com/nelstrom/vim-textobj-rubyblock.git"
 
 ### LANGUAGE AND SYNTAX
 
