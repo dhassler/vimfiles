@@ -24,3 +24,5 @@ map <silent> <Leader>r :call Refresh()<CR>
 """ Clojure nREPL bindings
 nnoremap <C-e> :Eval<CR>
 nnoremap E :%Eval<CR>
+nnoremap cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
+
