@@ -26,3 +26,6 @@ nnoremap <C-e> :Eval<CR>
 nnoremap E :%Eval<CR>
 nnoremap cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
 
+
+""" ctrl-p exclusions
+set wildignore+=*/\.git/*,*/vendor/*
