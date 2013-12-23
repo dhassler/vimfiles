@@ -74,6 +74,9 @@ set tabstop=2    " two-space tabs
 set shiftwidth=2 " autoindent is two spaces
 set expandtab    " use spaces, not tabs
 
+""" don't use soft tabs for coffeescript
+""" autocmd BufRead,BufEnter,BufNewFile *.coffee set noexpandtab
+
 """ reading and writing files
 
 set autoread " auto-reload any file modified outside vim
