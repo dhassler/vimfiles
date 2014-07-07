@@ -28,4 +28,4 @@ nnoremap cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
 
 
 """ ctrl-p exclusions
-set wildignore+=*/\.git/*,*/vendor/*,tags,*/gen-java/*
+set wildignore+=*/vendor/*,tags,*/gen-java/*
