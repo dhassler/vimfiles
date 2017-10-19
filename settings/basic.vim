@@ -75,7 +75,9 @@ set shiftwidth=2 " autoindent is two spaces
 set expandtab    " use spaces, not tabs
 
 """ don't use soft tabs for coffeescript
-""" autocmd BufRead,BufEnter,BufNewFile *.coffee set noexpandtab
+autocmd BufRead,BufEnter,BufNewFile *.coffee set noexpandtab
+""" ...or Java files
+autocmd BufRead,BufEnter,BufNewFile *.java set noexpandtab
 
 """ reading and writing files
 
@@ -105,3 +107,5 @@ set wildmenu " command-line completion shows matches
 set encoding=utf-8 " set default encoding (default in macvim)
 
 set nofoldenable " disable folding
+
+:inoremap <S-Tab> <C-V><Tab>

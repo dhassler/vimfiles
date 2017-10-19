@@ -66,24 +66,13 @@ let g:surround_45 = "<% \r %>"  " -
 let g:surround_61 = "<%= \r %>" " =
 
 
-""" vimclojure
-let vimclojure#HighlightBuiltins=1
-let vimclojure#ParenRainbow=1
-"""let vimclojure#WantNailgun=1
-"""let vimclojure#SplitPos="bottom"
-"""let vimclojure#SplitSize=10
-"""imap <buffer> <silent> <C-,> <Plug>ClojureReplUpHistory
-"""imap <buffer> <silent> <C-.> <Plug>ClojureReplDownHistory
-
-""" autocmd FileType * if &ft == "clojure" && exists("b:vimclojure_repl") | call SetupMyVCRepl() | endif
-""" autocmd FileType * if &ft == "clojure" | call SetupMyVCRepl() | endif
-
 """ tagbar
 map <silent> <Leader>tb :TagbarOpen<CR>
 map <Leader>t :TagbarToggle<CR>
 if has("gui_running")
   map <D-e> :TagbarToggle<CR><C-w>l
 endif
+
 
 """ gist
 " post gists privately by default

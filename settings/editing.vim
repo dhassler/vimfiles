@@ -58,7 +58,8 @@ endif
 map <leader>tn :tabnew<CR>
 
 " hide quickfix window
-nnoremap q :ccl<CR>
+" noremap <Leader>q q
+nnoremap <Leader>q :ccl<CR>
 
 " easy escape
 imap jj <Esc>
@@ -182,4 +183,9 @@ map <C-Right> :call TabMove(0)<CR>
 " map <C-p> :call TabMove(1)<CR>
 " map <C-n> :call TabMove(0)<CR>
 
-map ,T :w<CR>:Require<CR>:call fireplace#echo_session_eval("(run-all-tests)")<CR>
+""" Clojure bindings
+" map ,T :w<CR>:Require<CR>:call fireplace#echo_session_eval("(run-all-tests)")<CR>
+" nnoremap <C-e> :Eval<CR>
+" nnoremap E :%Eval<CR>
+" nnoremap cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
+

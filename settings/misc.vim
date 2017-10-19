@@ -21,11 +21,28 @@ endfunction
 
 map <silent> <Leader>r :call Refresh()<CR>
 
-""" Clojure nREPL bindings
-nnoremap <C-e> :Eval<CR>
-nnoremap E :%Eval<CR>
-nnoremap cpt :w<CR>:Require<CR>:Eval (run-tests)<CR>
-
 
 """ ctrl-p exclusions
 set wildignore+=*/vendor/*,tags,*/gen-java/*
+
+
+""" vimwiki config
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki'}]
+""":autocmd FileType vimwiki map d :VimwikiMakeDiaryNote
+""":autocmd FileType vimwiki unmap d
+function! ToggleCalendar()
+  execute ":Calendar"
+  if exists("g:calendar_open")
+    if g:calendar_open == 1
+      execute "q"
+      unlet g:calendar_open
+    else
+      g:calendar_open = 1
+    end
+  else
+    let g:calendar_open = 1
+  end
+endfunction
+:autocmd FileType vimwiki map <Leader>c :call ToggleCalendar()
+
+set clipboard=unnamed
